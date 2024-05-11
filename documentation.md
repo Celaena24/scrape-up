@@ -36,6 +36,7 @@ per user.followers()
 - [Academia](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#academia)
 - [BBC News](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#bbc-news)
 - [Coin Market Cap](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#coinmarketcap)
+- [Coursera](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#coursera)
 - [Covid Info](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#covidinfo)
 - [Cricbuzz](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#cricbuzz)
 - [Dribbble](https://github.com/Clueless-Community/scrape-up/blob/main/documentation.md#dribbble)
@@ -406,6 +407,25 @@ crypto = coinmarketcap.Crypto()
 | Method                       | Details                                                  |
 | ---------------------------- | -------------------------------------------------------- |
 | `get_top_cryptocurrencies()` | Fetches and returns data about the top cryptocurrencies. |
+
+---
+
+### Coursera
+
+```py
+from scrape_up import coursera
+```
+
+Create an instance of `Coursera` class
+
+```python
+scraper = Coursera("topic)
+```
+
+| Methods                               | Details                                                                                    |
+| ------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `.get_courses()`                       | Returns the courses with title, taught by, skills, rating, review count, img url and link |
+| `.fetchModules(course='Course Name')` | Returns the modules associated with the Coursera.                                          |
 
 ---
 
